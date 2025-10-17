@@ -1,3 +1,11 @@
+from flask import render_template
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+
 import os
 import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
